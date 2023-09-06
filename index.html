@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--Css Style-->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--Css Style BootStrapp -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+	<!-- Icons of font-Awesome -->
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+	<!-- Font Google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Caveat:wght@400;700&family=Michroma&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<title>Inicio | InmoValley</title>
+	<link rel="icon" href="images/Assets/icon-logo.ico" type="image/x-icon">
+</head>
+
+<body>
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-lg fixed-top">
+		<div class="col-4 px-md-3 px-0 order-lg-3 text-center">
+			<a href="#" class="d-lg-inline-block pt-lg-4">
+				<img src="images/Assets/logo_header.svg" class="imgHeader">
+			</a>
+		</div>
+
+		<div class="col-lg-4 navBarLeft d-none d-lg-flex">
+			<div class="phone">
+				<a href="#">966 274 206</a>
+			</div>
+			<div class="list-inline" id="navbarNav">
+				<ul class="list-inline">
+					<li class="list-inline-item active"><a href="#">INICIO</a></li>
+					<li class="nav-item dropdown list-inline-item">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Propiedades
+						</a>
+						<div id= "optionNav" class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Ver todas las propiedades</a>
+							<a class="dropdown-item" href="#">Alquiler a largo plazo</a>
+							<a class="dropdown-item" href="#">Nueva construcción</a>
+							<a class="dropdown-item" href="#">Venta</a>
+						</div>
+					</li>
+					<li class="list-inline-item hide-header"><a href="#">Vender</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="navBar-rigth  col-lg-4 pl-xl-0 order-lg-last d-none d-lg-block text-lg-end text-nowrap">
+			<div class="email d-inline-block detail pe-3">
+				<a>info@inmovalley.com</a>
+			</div>
+			<div class="d-inline-block pe-3">
+				<ul class="dropdown idiomas-dropdown">
+					<li class="nav-item dropdown list-inline-item">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img id="languageFlag" src="images/Assets/eng_flag.svg">
+						</a>
+						<div id="optionNav" class="opcionSpain dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+							<a id="optionLanguage" class="dropdown-item" href="#" onclick="changeLanguage('es')">
+								<img id="optionLanguageFlag" src="images/Assets/es_flag.svg">
+								<span id="languageText">Español</span>
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="d-inline-block">
+				<a href="#" id="facebook" title="Facebook">
+					<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+						<style>
+							svg {
+								fill: #ffffff
+							}
+						</style>
+						<path
+							d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+					</svg>
+				</a>
+			</div>
+			<div id="secondDiv">
+				<ul class="list-inline d-inline">
+					<li class=" no-hover list-inline-item ">
+						<a href="#">
+							<img src="images/Assets/icon_heart_fill.svg">
+						</a>(2)
+					</li>
+					<li class="list-inline-item"><a href="#">Contactar</a></li>
+				</ul>
+				<div class="d-inline-block text-white ps-3">
+					<a id="menu" class="list-inline btn-menu d-inline-block text-white" href="">
+						<img src="images/Assets/menu.svg" class="iconMenu ">
+						Menu
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+<!-- Company presentation -->
+	<div class="relativeElement">
+		<div class="slider">
+			<div class="container row caption textLeft textAlignCenter">
+				<div class="col-md-6 col-lg-7">
+					<div class="animatedLeft moveInLeft late">
+						INMO <span>VALLEY</span>
+					</div>
+					<a class="arrow d-none d-lg-block ">
+						<img src="images/Assets/Icon feather-arrow-down-circle.svg">
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-5 align-self-md-end">
+					<div class="animatedRight moveInBottom late textLeft">
+						<small>Siempre a tu lado</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Javascript -->
+	<script src="javascript/script.js"></script>
+
+	<!-- JavaScript Bootstrap and Jquery -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
